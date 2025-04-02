@@ -1,0 +1,12 @@
+.card-about{ 
+    width: 784px;
+    height:180px;
+    
+}
+.text-para {
+    color: #000000;
+    font-size: 18px;
+    font-family: "Roboto";
+    line-height: 23px;
+    text-align: justify;
+}

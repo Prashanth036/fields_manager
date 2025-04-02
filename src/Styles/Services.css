@@ -1,6 +1,4 @@
 .card { 
-    top: 942px;
-    left: 53px;
     width: 784px;
     height: 80px;
     background-color: rgba(219, 219, 219, 0.64);
@@ -26,9 +24,30 @@
     padding-right:4px;
     
   }
-  .text {
+.text {
+    color: #030303;
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    line-height: 31px;
+  }
+.text-sports {
     color: #000000;
     font-size: 18px;
     font-family: "Roboto";
     line-height: 23px;
-  }  
+  }
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap:685px; 
+}  
+.share-icon {
+    color: #030303;
+    fill: #030303;
+    font-size: 24px;
+    top: 565px;
+    left: 808px;
+    width: 24px;
+    height: 24px;
+  }    

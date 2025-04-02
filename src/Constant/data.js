@@ -5,6 +5,7 @@ import pickle_ball from "../assets/pickle_ball.svg"
 export const services_data = [
     {
         name: "Live streaming service",
+        about:"",
         image: "",
         about: "Live Stream bio",
         available_sports: [ 
