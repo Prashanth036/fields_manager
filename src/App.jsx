@@ -1,9 +1,11 @@
 import React from 'react'
+import { Services } from './Pages/Services'
 
 export const App = () => {
   return (
     <div>
-      <Header />
+      {/* <Headers /> */}
+      <Services />
     </div>
   )
 }
