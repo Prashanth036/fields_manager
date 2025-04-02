@@ -1,0 +1,25 @@
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #30b330;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+  }
+.text-header {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    padding-top:19px;
+    padding-left:55px;
+    padding-bottom:25px;    
+    
+  } 
+.header-image {
+    max-width:50px;
+    border-radius:10px;
+    padding-top:14px;
+    padding-bottom: 21px;
+    padding-right:48px;
+}  

@@ -3,6 +3,7 @@
     height: 80px;
     background-color: rgba(219, 219, 219, 0.64);
     border-radius: 8px;
+    margin-left:55px;
 }
 
 .card-items{
@@ -30,6 +31,7 @@
     font-family: "Montserrat";
     font-weight: 600;
     line-height: 31px;
+    padding-left:55px;
   }
 .text-sports {
     color: #000000;
@@ -50,4 +52,5 @@
     left: 808px;
     width: 24px;
     height: 24px;
-  }    
+  }  
+    

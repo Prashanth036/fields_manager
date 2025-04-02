@@ -4,6 +4,7 @@ import "../Styles/Services.css";
 import "../Styles/About.css";
 import Text from "../components/About";
 import Icon_share from "../assets/Icon_share.svg";
+import { Header } from "../components/Header";
 
 const getServices = new Promise((resolve) => {
   setTimeout(() => {
@@ -29,6 +30,7 @@ export const Services = () => {
 
   return (
     <>
+    <Header />
       <div className="about-container">
         <h1 className="text">About</h1>
         <img src={Icon_share} className="share-icon" />
