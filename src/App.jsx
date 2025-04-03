@@ -1,12 +1,13 @@
 import React from 'react'
 import { Services } from './Pages/Services'
+import "./App.css";
 
 export const App = () => {
   return (
-    <div>
+    <>
       
       <Services />
-    </div>
+    </>
   )
 }
 

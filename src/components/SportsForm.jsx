@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FormInput from "./FormInput";
 import "../Styles/sportsform.css";
-import { formFields, RESERVE_PAGE_TEXT } from "../constants/data";
+import { formFields, RESERVE_PAGE_TEXT } from "../Constant/data";
 
 const SportsForm = () => {
   const [formData, setFormData] = useState({
