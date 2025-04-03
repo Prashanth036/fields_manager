@@ -1,18 +1,35 @@
-.form-container {
-    max-width: 80%; 
+.form {
     width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form h2 {
+    color: #030303;
+    font-size: 24px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 600;
+    line-height: 31px;
+}
+.form-container {
+    width: 100%;
+    max-width: 100%;
     background-color: #f3f3f3;
-    border-radius: 26px;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.08);
-    padding: 20px;
+    border-radius: 1.625rem; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    padding: 1.25rem; 
     margin: auto;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form-input {
-    padding: 32px;
+    padding: 2rem; 
+    width: 100%;
 }
-
 .form-footer {
     display: flex;
     flex-direction: column;
@@ -22,33 +39,62 @@
 .submit-button {
     cursor: pointer;
     width: 100%; 
-    max-width: 400px; 
-    height: 44px;
-    padding: 0px 8px;
-    margin: auto;
+    max-width: 25rem;
+    height: 2.75rem; 
+    padding: 0 0.5rem;
     border: 0;
     box-sizing: border-box;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     background-color: #151515;
     color: #ffffff;
-    font-size: 16px;
-    font-family: "Montserrat";
-    line-height: 20px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.25rem;
     outline: none;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .form-footer p {
     color: #9d9d9d;
     font-size: 14px;
-    font-family: "Roboto";
+    font-family: "Roboto",sans-serif;
     line-height: 16px;
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 720px) {
+    .form {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 4rem;
+    }
     .form-container {
         max-width: 100%;
-        padding: 16px;
+        padding: 1rem;
+    }
+    .form-input {
+        padding: 24px;
+    }
+    .submit-button {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 4rem;
+    }
+    .form-container {
+        max-width: 100%;
+        padding: 1rem;
     }
     .form-input {
         padding: 24px;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { services_data } from "../Constant/data";
-import "../Styles/Services.css";
+import "../Styles/sportsList.css";
 
 const getServices = new Promise((resolve) => {
   setTimeout(() => {

@@ -25,25 +25,28 @@ const SportsForm = () => {
     alert("Form submitted!");
   };
   return (
-    <form className="form-container" onSubmit={handleSubmit}>
-      <div className="form-input">
-      {formFields.map((field, index) => (
-        <FormInput
-          key={index}
-          {...field}
-          value={formData[field.name]}
-          onChange={handleChange}
-        />
-      ))}
-      </div>
+    <div className="form">
+      <h2>Reserve</h2>
+      <form className="form-container" onSubmit={handleSubmit}>
+        <div className="form-input">
+          {formFields.map((field, index) => (
+            <FormInput
+              key={index}
+              {...field}
+              value={formData[field.name]}
+              onChange={handleChange}
+            />
+          ))}
+        </div>
 
-      <div className="form-footer">
-        <button type="submit" className="submit-button">
-          Reserve
-        </button>
-        <p>{RESERVE_PAGE_TEXT}</p>
-      </div>
-    </form>
+        <div className="form-footer">
+          <button type="submit" className="submit-button">
+            Reserve
+          </button>
+          <p>{RESERVE_PAGE_TEXT}</p>
+        </div>
+      </form>
+    </div>
   );
 };
 
