@@ -5,7 +5,7 @@ import "../Styles/Services.css";
 import "../Styles/ImageGallery.css";
 import Text from "../components/About";
 import Icon_share from "../assets/Icon_share.svg";
-import { Header } from "../components/Header";
+import  Header  from "../components/Header";
 import Image_Gallery_profile from "../assets/Image_Gallery_profile.svg";
 import Image_Gallery from "../assets/Image_Gallery.svg";
 import SportsForm from "../components/SportsForm";

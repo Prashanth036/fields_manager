@@ -2,7 +2,7 @@ import React from 'react'
 import "../Styles/Header.css"
 import header_image from "../assets/header_image.svg"
 
-export const Header = () => {
+ const Header = () => {
   return (
     <div className="header-card">
         <h1 className="text-header">Fields Manager</h1> 
@@ -10,3 +10,5 @@ export const Header = () => {
     </div>
   )
 }
+
+export default Header;
