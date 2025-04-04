@@ -17,7 +17,7 @@
   .text-name {
     color: #030303;
     font-size: 16px;
-    font-family: "Montserrat";
+    font-family: "Montserrat",sans-serif;
     margin-top:8px;
     margin-left:8px;
   }  
@@ -25,14 +25,14 @@
   .text-bio {
     color: #858585;
     font-size: 14px;
-    font-family: "Montserrat";
+    font-family: "Montserrat",sans-serif;
     font-weight: 300;
     margin-left:8px;
 } 
 .fee {
     color: #030303;
     font-size: 16px;
-    font-family: "Montserrat";
+    font-family: "Montserrat",sans-serif;
     font-weight: 600;
     margin: 0; 
     flex-grow: 1;

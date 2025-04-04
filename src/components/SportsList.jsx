@@ -1,39 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { services_data } from "../Constant/data";
-import "../Styles/sportsList.css";
+import React from "react";
+import "../Styles/SportsList.css";
+import IconText from "./IconText";
 
-const getServices = new Promise((resolve) => {
-  setTimeout(() => {
-    resolve(services_data);
-  }, 2000);
-});
-
-export const SportsList = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const getData = async () => {
-      try {
-        const response = await getServices;
-        console.log(response);
-        setData(response);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    getData();
-  }, []);
+export const SportsList = ({ heading, data }) => {
   return (
     <div className="sports-list">
-      <h2 className="text">Available Sports</h2>
+      <h2 className="sports-heading">{heading}</h2>
       {data.length > 0 && (
-        <div className="card">
+        <div className="sports-card">
           <div className="card-items">
-            {data[0].available_sports.map((sport, index) => (
-              <div key={index} className="text-sports">
-                <img src={sport.icon} alt={sport.name} className="image" />
-                {sport.name}
-              </div>
+            {data.map((sport, index) => (
+              <IconText key={index} icon={sport.icon} text={sport.name} />
             ))}
           </div>
         </div>

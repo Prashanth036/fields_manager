@@ -15,7 +15,9 @@ const FormInput = ({
 
   const handleIconClick = () => {
     if (inputRef.current) {
-      inputRef.current.showPicker();
+      inputRef.current.showPicker
+        ? inputRef.current.showPicker() 
+        : inputRef.current.focus(); 
     }
   };
   return (

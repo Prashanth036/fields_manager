@@ -6,8 +6,8 @@ import ServicesList from "./Pages/ServiceList";
 export const App = () => {
   return (
     <>
-      {/* <Services /> */}
-      <ServicesList/>
+      <Services />
+      {/* <ServicesList /> */}
     </>
   );
 };

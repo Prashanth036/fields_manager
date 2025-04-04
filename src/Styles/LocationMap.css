@@ -1,0 +1,27 @@
+.location-map {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 55px;
+}
+
+.location-map-heading {
+  color: #030303;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 31px;
+}
+
+.location-map-address {
+  color: #828282;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
+}
+
+.map-container {
+  height: 293px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+}

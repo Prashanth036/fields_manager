@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FormInput from "./FormInput";
 import "../Styles/sportsform.css";
 import { formFields, RESERVE_PAGE_TEXT } from "../Constant/data";
+import { convertTo12HourFormat } from "../Utils/utils";
 
 const SportsForm = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +23,20 @@ const SportsForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const formattedData = {
+      ...formData,
+      time: convertTo12HourFormat(formData.time),
+      duration: convertTo12HourFormat(formData.duration),
+    };
+    console.log(formattedData);
     alert("Form submitted!");
+    setFormData({
+      sport: "",
+      date: "",
+      time: "",
+      duration: "",
+      ground: "",
+    })
   };
   return (
     <div className="form">
